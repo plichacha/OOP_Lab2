@@ -267,6 +267,6 @@ Source code is available on GitHub:
 
 ## Author
 
-**plichacha**
+**Iryna Nesteruk**
 
 Object-Oriented Programming — Practical Work Lab-2
