@@ -37,6 +37,30 @@ VirtualItemShop/
 └── README.md
 ```
 
+## How to Run
+
+### Using Visual Studio
+
+1. Clone the repository:
+
+```text
+git clone https://github.com/plichacha/OOP_Lab1.git
+```
+
+2. Open the solution file in Visual Studio.
+3. Build the solution.
+4. Run the project.
+
+### Using .NET CLI
+
+Navigate to the project directory and run:
+
+```text
+dotnet restore
+dotnet build
+dotnet run
+```
+
 ## Main Class
 
 ### `VirtualItem`
@@ -44,7 +68,7 @@ VirtualItemShop/
 The `VirtualItem` class contains the following characteristics:
 
 | Property      | Type         | Description                              |
-| ------------- | ------------ | ---------------------------------------- |
+| ------------- | ------------ | ----------------------------------------- |
 | `Name`        | `string`     | Item name                                |
 | `Rarity`      | `ItemRarity` | Item rarity                              |
 | `Price`       | `double`     | Base item price                          |
@@ -118,7 +142,7 @@ public DateTime CreatedDate { get; private set; }
 
 The creation date can be read from outside the class but can only be changed inside the class.
 
-`Durability` also uses a public getter and private setter.
+`UsesCount` also uses a public getter and a private setter, for the same reason: the usage counter must only change as a result of calling `Use()`, not be set directly from outside the class.
 
 ### Computed properties
 
@@ -235,8 +259,14 @@ The purpose of this practical assignment is to demonstrate:
 8. Exception handling.
 9. Interaction with objects through their public interface.
 
+## Repository
+
+Source code is available on GitHub:
+
+<https://github.com/plichacha/OOP_Lab1>
+
 ## Author
 
-**I. Nesteruk**
+**plichacha**
 
 Object-Oriented Programming — Practical Work Lab-2
